@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid</title>
+  <style>
+    #tudo {
+      grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+      height: 97vh;
+      gap: 5px;
+      display: grid;
+      grid-template-areas:
+      "nav nav nav nav"
+      "side main main main"
+      "side c1 c2 c3"
+      "side foot foot foot";
+     grid-template-columns:  1fr  1fr  1fr  1fr ;
+    }
+    .nav{
+      grid-area: nav;
+    }
+     .side{
+      grid-area: side;
+    }
+     .main{
+      grid-area: main;
+    }
+     .c1{
+      grid-area: c1;
+    }
+     .c2{
+      grid-area: c2;
+    }
+     .c3{
+      grid-area: c3;
+    }
+     .foot{
+      grid-area: foot;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="tudo">
+    <div class="nav" style="border: 2px solid; padding-left: 650px; background-color: rgb(0, 255, 149);;">
+      <p>navbar</p>
+    </div>
+    <div class="side" style="border: 2px solid; padding-left: 50px;  background-color: rgb(0, 255, 149);">
+      <p>side bar</p>
+    </div>
+    <div class="main" style="border: 2px solid; padding-left: 500px;  background-color: rgb(0, 255, 149);">
+      <p>main</p>
+    </div>
+    <div class="c1" style="border: 2px solid;  background-color: rgb(0, 255, 149);">
+      <p>content 1</p>
+    </div>
+    <div class="c2" style="border: 2px solid;  background-color: rgb(0, 255, 149);">
+      <p>content 2</p>
+    </div>
+    <div class="c3" style="border: 2px solid;  background-color: rgb(0, 255, 149);">
+      <p>content 3</p>
+    </div>
+    <div class="foot" style="border: 2px solid; padding-left: 500px; background-color: rgb(0, 255, 149); ">
+      <p>footer</p>
+    </div>
+  </div>
+</body>
+
+</html>
